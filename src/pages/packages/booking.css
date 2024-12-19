@@ -1,0 +1,72 @@
+.package-detail-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .package-info h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .package-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .travelers-input {
+    margin: 1rem 0;
+  }
+  
+  .travelers-input input {
+    width: 80px;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2980b9;
+  }
+  
+  .booking-form {
+    margin-top: 2rem;
+  }
+  
+  .booking-form input,
+  .booking-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .booking-form button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .booking-form button:hover {
+    background-color: #2980b9;
+  }
+  
