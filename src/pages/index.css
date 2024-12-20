@@ -20,22 +20,29 @@
   /* Hero Section */
   .hero-section {
     text-align: center;
-    background: linear-gradient(to bottom, #c8ddeb, #7ca51d, black);
+    /*background: linear-gradient(to bottom, #c8ddeb, #7ca51d, black);*/
+    background: linear-gradient(to top,#bfc0cd, #f1f1f1, rgb(91, 93, 93));    
     color: white;
     padding: 2.5rem 1rem;
     border-radius: 8px;
     margin-bottom: 2rem;
+    border: 3px solid #1d0e0e;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);
+    border-top: 0;
+    border-left: 0;
   }
   
   .hero-section h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: rgb(11, 11, 11);
+    text-shadow: 2px 2px 0 #000000, 1px 1px 0 #653f3f;
+    color: #acac93;
   }
   
   .hero-section p {
     font-size: 1.2rem;
     opacity: 0.9;
+    color:rgb(88, 61, 34);
   }
   
   /* Package Grid */
