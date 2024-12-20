@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(#f5f5f5, rgb(253, 229, 211), rgb(227, 210, 177));
+  background: linear-gradient(#f5f5f5, rgb(253, 229, 211), rgb(255, 255, 255));
   color: #333;
   line-height: 1.6;
 }
@@ -33,7 +33,7 @@ h1 {
 }
 
 .package-card {
-  background: linear-gradient(to-top, whitesmoke, #9fbfc6, rgb(60, 109, 120));
+  background: linear-gradient(white, white, white, orange);
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
