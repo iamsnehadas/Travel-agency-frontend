@@ -2,7 +2,6 @@
 import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import API_BASE_URL from '../config.js';
 
 export default function Admin() {
   const [packages, setPackages] = useState([]);
@@ -19,13 +18,13 @@ export default function Admin() {
   }, []);
 
   const fetchPackages = () => {
-    axios.get('${API_BASE_URL}/api/packages')
+    axios.get('https://travel-agency-backend-3yhw.onrender.com/api/packages')
       .then((response) => setPackages(response.data))
       .catch((error) => console.error('Error fetching packages:', error));
   };
 
   const addPackage = () => {
-    axios.post('${API_BASE_URL}/api/packages', newPackage)
+    axios.post('https://travel-agency-backend-3yhw.onrender.com/api/packages', newPackage)
       .then(() => {
         fetchPackages();
         setNewPackage({ title: '', description: '', price: 0, availableDates: '', image: '' });
@@ -77,7 +76,7 @@ export default function Admin() {
           <div key={pkg._id} className="border p-4 mt-4 rounded shadow">
             <h3 className="text-lg font-semibold">{pkg.title}</h3>
             <button
-              onClick={() => axios.delete(`${API_BASE_URL}/api/packages/${pkg._id}`).then(fetchPackages)}
+              onClick={() => axios.delete(`https://travel-agency-backend-3yhw.onrender.com/api/packages/${pkg._id}`).then(fetchPackages)}
               className="mt-2 px-4 py-2 bg-red-500 text-white rounded"
             >
               Delete

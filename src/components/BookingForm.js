@@ -1,7 +1,6 @@
 // src/components/BookingForm.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import API_BASE_URL from '../config.js';
 
 export default function BookingForm({ packageId, pricePerTraveler }) {
   const [formData, setFormData] = useState({
@@ -24,7 +23,7 @@ export default function BookingForm({ packageId, pricePerTraveler }) {
 
     try {
       const data = { ...formData, packageId, totalPrice };
-      await axios.post('${API_BASE_URL}/api/bookings', data);
+      await axios.post('https://travel-agency-backend-3yhw.onrender.com/api/bookings', data);
       alert('Booking successful!');
       setFormData({
         name: '',

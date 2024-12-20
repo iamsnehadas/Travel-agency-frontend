@@ -2,9 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import BookingForm from '../../components/BookingForm.js'; // Import BookingForm
+import BookingForm from '../../components/BookingForm.js'; 
 import './booking.css';
-import API_BASE_URL from '../../config.js';
 
 export default function PackageDetail() {
   const { id } = useParams(); // Get the package id from the URL using React Router
@@ -16,7 +15,7 @@ export default function PackageDetail() {
   useEffect(() => {
     if (id) {
       axios
-        .get(`${API_BASE_URL}/api/packages/${id}`)
+        .get(`https://travel-agency-backend-3yhw.onrender.com/api/packages/${id}`)
         .then((response) => {
           setPkg(response.data);
           setTotalPrice(response.data.price); // Initialize total price

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import './index.css';
-import API_BASE_URL from '../config.js';
 
 export default function Home() {
   const [packages, setPackages] = useState([]);
@@ -11,7 +10,7 @@ export default function Home() {
   // Fetch packages from the backend
   useEffect(() => {
     axios
-      .get('${API_BASE_URL}/api/packages')
+      .get('https://travel-agency-backend-3yhw.onrender.com/api/packages')
       .then((response) => {
         console.log('API Response:', response.data);
         setPackages(response.data);

@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import API_BASE_URL from '../config.js';
 
 export default function PackageDetail() {
   const { id } = useParams();  // Get the package id from the URL using React Router
@@ -19,7 +18,7 @@ export default function PackageDetail() {
   useEffect(() => {
     if (id) {
       // Corrected API URL (template literals)
-      axios.get(`${API_BASE_URL}/api/packages/${id}`)
+      axios.get(`https://travel-agency-backend-3yhw.onrender.com/api/packages/${id}`)
         .then(response => setPkg(response.data))
         .catch(error => console.error('Error fetching package:', error));
     }
@@ -30,7 +29,7 @@ export default function PackageDetail() {
 
     try {
       const data = { ...formData, packageId: id };
-      await axios.post('http://localhost:5000/api/bookings', data);
+      await axios.post('https://travel-agency-backend-3yhw.onrender.com/api/bookings', data);
       alert('Booking successful!');
     } catch (error) {
       console.error('Error submitting booking:', error);
