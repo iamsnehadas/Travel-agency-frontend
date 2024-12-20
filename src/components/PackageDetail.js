@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import API_BASE_URL from '../config.js';
 
 export default function PackageDetail() {
   const { id } = useParams();  // Get the package id from the URL using React Router
@@ -18,7 +19,7 @@ export default function PackageDetail() {
   useEffect(() => {
     if (id) {
       // Corrected API URL (template literals)
-      axios.get(`http://localhost:5000/api/packages/${id}`)
+      axios.get(`${API_BASE_URL}/api/packages/${id}`)
         .then(response => setPkg(response.data))
         .catch(error => console.error('Error fetching package:', error));
     }

@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import BookingForm from '../../components/BookingForm.js'; // Import BookingForm
 import './booking.css';
+import API_BASE_URL from '../../config.js';
 
 export default function PackageDetail() {
   const { id } = useParams(); // Get the package id from the URL using React Router
@@ -15,7 +16,7 @@ export default function PackageDetail() {
   useEffect(() => {
     if (id) {
       axios
-        .get(`http://localhost:5000/api/packages/${id}`)
+        .get(`${API_BASE_URL}/api/packages/${id}`)
         .then((response) => {
           setPkg(response.data);
           setTotalPrice(response.data.price); // Initialize total price
