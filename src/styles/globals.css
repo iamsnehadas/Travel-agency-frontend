@@ -33,8 +33,7 @@ h1 {
 }
 
 .package-card {
-  /*background: linear-gradient(to bottom, white, #4d8eba, #99d50c);*/
-  background: linear-gradient(#138199, black);
+  background: linear-gradient(to-top, whitesmoke, #9fbfc6, rgb(60, 109, 120));
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
@@ -56,13 +55,13 @@ h1 {
 .package-card h2 {
   font-size: 1.5rem;
   margin: 1rem;
-  color: #1d252d;
+  color: #14181c;
 }
 
 .package-card p {
   margin: 0 1rem 1rem;
   font-size: 1rem;
-  color: #ffffff;
+  color: #2c2626;
 }
 
 .package-card .description {
