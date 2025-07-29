@@ -20,13 +20,13 @@
   /* Hero Section */
   .hero-section {
     text-align: center;
-    background: linear-gradient(to top, #64656e, #f1f1f1, orange);    
-    color: white;
+    /*background: linear-gradient(to top, #64656e, #f1f1f1, orange); */   
+    color: black;
     padding: 2.5rem 1rem;
     border-radius: 8px;
     margin-bottom: 2rem;
-    border: 3px solid #1d0e0e;
-    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);
+    border: 2px solid #1d0e0e;
+    /*box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.8);*/
     border-top: 0;
     border-left: 0;
   }
