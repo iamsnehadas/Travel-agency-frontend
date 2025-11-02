@@ -32,7 +32,7 @@ This is the frontend of the **Travel Agency Booking System**, built with **React
 ### **Steps**
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/iamsnehadas/Ttravel-agency-frontend.git
+   git clone https://github.com/iamsnehadas/Travel-agency-frontend.git
 2. **Navigate to the Frontend Directory**:
    ```bash
    cd frontend
